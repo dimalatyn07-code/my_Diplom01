@@ -1,0 +1,9 @@
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/MyDiplom.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/edit_cache.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/list_install_components.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/install.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/install/local.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/install/strip.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/MyDiplom_autogen_timestamp_deps.dir
+/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/MyDiplom_autogen.dir
