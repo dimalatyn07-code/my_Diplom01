@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/MyDiplom_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dmitri/MyDiplom",
+	"CMAKE_SOURCE_DIR" : "/home/dmitri/MyDiplom",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/MyDiplom_autogen/include",
+	"INPUTS" : [ "/home/dmitri/MyDiplom/intro_source_file/intro.mp4" ],
+	"LOCK_FILE" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/MyDiplom_autogen.dir/AutoRcc_introQRC_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "introQRC" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_introQRC.cpp",
+	"RCC_EXECUTABLE" : "/home/dmitri/Qt/6.10.2/gcc_64/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/dmitri/MyDiplom/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/MyDiplom_autogen.dir/AutoRcc_introQRC_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/dmitri/MyDiplom/introQRC.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

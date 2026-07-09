@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon_source_file/statistics.png</file>
+        <file>icon_source_file/biometricsPage.png</file>
+        <file>icon_source_file/employeesPage.png</file>
+        <file>icon_source_file/settingsPage.png</file>
+        <file>icon_source_file/homePage.png</file>
+    </qresource>
+</RCC>

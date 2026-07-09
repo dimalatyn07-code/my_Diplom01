@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/introRec">
+        <file>intro_source_file/intro.mp4</file>
+    </qresource>
+</RCC>
