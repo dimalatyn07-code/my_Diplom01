@@ -61,8 +61,20 @@ public:
     QFrame *indicator;
     QStackedWidget *stackedWidget_2;
     QWidget *page;
-    QPushButton *pushButton_6;
-    QLabel *label_4;
+    QLabel *label_NameApplication;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout_3;
+    QGroupBox *groupBox_Arrived;
+    QLabel *label_TitleArrived;
+    QLabel *label_NumberArrived;
+    QSpacerItem *horizontalSpacer_5;
+    QGroupBox *groupBox_Late;
+    QLabel *label_TitleLate;
+    QLabel *label_NumberLate;
+    QSpacerItem *horizontalSpacer_6;
+    QGroupBox *groupBox_Missing;
+    QLabel *label_TitleMissing;
+    QLabel *label_NumberMissing;
     QWidget *page_2;
     QLineEdit *lineEdit;
     QLabel *label_5;
@@ -90,9 +102,9 @@ public:
 "    font-size: 14px;\n"
 "    background-color: transparent;\n"
 "}\n"
+"\n"
 "QFrame#indicator {\n"
 "    background-color: #00c896;\n"
-"\n"
 "    border-radius: 2px;\n"
 "}\n"
 "\n"
@@ -107,10 +119,8 @@ public:
 "\n"
 "QGroupBox {\n"
 "    background-color: #0d1815;\n"
-"\n"
 "    border: 1px solid #18352d;\n"
 "    border-radius: 22px;\n"
-"\n"
 "    padding: 28px;\n"
 "}\n"
 "\n"
@@ -124,33 +134,132 @@ public:
 "\n"
 "QLabel {\n"
 "    color: #d5f5ec;\n"
-"\n"
 "    font-size: 15px;\n"
 "    font-weight: 500;\n"
 "}\n"
 "\n"
 "QLabel#labelTitle {\n"
 "    color: #ffffff;\n"
-"\n"
 "    font-size: 34px;\n"
 "    font-weight: 700;\n"
-"\n"
 "    letter-spacing: 1px;\n"
-"\n"
+"    padding-bottom: 10px;\n"
 ""
-                        "    padding-bottom: 10px;\n"
+                        "}\n"
+"\n"
+"QLabel#label_NameApplication {\n"
+"    font-size: 35px;\n"
+"    font-weight: 700;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Arrived QLabel#label_TitleArrived {\n"
+"	font: 600 20pt \"Ubuntu Sans\";\n"
+"	font-weight: 500;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Arrived QLabel#label_NumberArrived {\n"
+"	font: 600 35pt \"Ubuntu Sans\";\n"
+"	font-weight: 650;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Late QLabel#label_TitleLate {\n"
+"	font: 600 20pt \"Ubuntu Sans\";\n"
+"	font-weight: 500;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Late QLabel#label_NumberLate {\n"
+"	font: 600 35pt \"Ubuntu Sans\";\n"
+"	font-weight: 650;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Missing QLabel#label_TitleMissing {\n"
+"	font: 600 20pt \"Ubuntu Sans\";\n"
+"	font-weight: 500;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Missing QLabel#label_NumberMissing {\n"
+"	font: 600 35pt \"Ubuntu Sans\";\n"
+"	font-weight: 650;\n"
+"}\n"
+"\n"
+"/* === \320\241\320\242\320\220\320\242\320\230\320\241\320\242\320\230\320\232\320\220: groupBox_Arrived (\320\267\320\265\320\273\321\221\320\275"
+                        "\321\213\320\271) === */\n"
+"QGroupBox#groupBox_Arrived {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #2d5a4a, stop:1 #1a3d32);\n"
+"    border: 2px solid #4a7c6a;\n"
+"    border-radius: 4px;\n"
+"    padding: 15px 20px;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Arrived:hover {\n"
+"    border: 2px solid #5a9c8a;\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #3d6a5a, stop:1 #2a4d42);\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Arrived QLabel {\n"
+"    color: #ffffff;\n"
+"    font-size: 18px;\n"
+"    font-weight: 700;\n"
+"    padding-left: 15px;\n"
+"    padding-top: 8px;\n"
+"}\n"
+"\n"
+"/* === \320\241\320\242\320\220\320\242\320\230\320\241\320\242\320\230\320\232\320\220: groupBox_Late (\320\276\321\200\320\260\320\275\320\266\320\265\320\262\321\213\320\271) === */\n"
+"QGroupBox#groupBox_Late {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #8b6a3d, stop:1 #5a4a2d);\n"
+"    border: 2px solid #a67c4a;\n"
+"    border-radius: 4px;\n"
+""
+                        "    padding: 15px 20px;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Late:hover {\n"
+"    border: 2px solid #c69c5a;\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #9b7a4d, stop:1 #6a5a3d);\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Late QLabel {\n"
+"    color: #ffffff;\n"
+"    font-size: 18px;\n"
+"    font-weight: 700;\n"
+"    padding-left: 15px;\n"
+"    padding-top: 8px;\n"
+"}\n"
+"\n"
+"/* === \320\241\320\242\320\220\320\242\320\230\320\241\320\242\320\230\320\232\320\220: groupBox_Missing (\320\272\321\200\320\260\321\201\320\275\321\213\320\271) === */\n"
+"QGroupBox#groupBox_Missing {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #6a3d3d, stop:1 #4a2d2d);\n"
+"    border: 2px solid #7c4a4a;\n"
+"    border-radius: 4px;\n"
+"    padding: 15px 20px;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBox_Missing:hover {\n"
+"    border: 2px solid #9c5a5a;\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #7a4d4d, stop:1 #5a3d3d);\n"
+"}\n"
+"\n"
+"QGroupBox#gro"
+                        "upBox_Missing QLabel {\n"
+"    color: #ffffff;\n"
+"    font-size: 18px;\n"
+"    font-weight: 700;\n"
+"    padding-left: 15px;\n"
+"    padding-top: 8px;\n"
 "}\n"
 "\n"
 "QLineEdit {\n"
 "    background-color: #101d1a;\n"
-"\n"
 "    border: 1px solid #21453b;\n"
 "    border-radius: 12px;\n"
-"\n"
 "    padding: 11px 14px;\n"
-"\n"
 "    color: #f2fffb;\n"
-"\n"
 "    font-size: 15px;\n"
 "}\n"
 "\n"
@@ -170,40 +279,30 @@ public:
 "\n"
 "QPushButton {\n"
 "    background-color: #10201b;\n"
-"\n"
 "    color: #ecfff8;\n"
-"\n"
 "    border: 1px solid #00c896;\n"
 "    border-radius: 12px;\n"
-"\n"
 "    padding: 10px 28px;\n"
-"\n"
 "    font-size: 15px;\n"
 "    font-weight: 600;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
 "    background-color: #00c896;\n"
-"\n"
 "    color: #04110d;\n"
-"\n"
 "    border: 1px solid #00e0a8;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #009f77;\n"
-"\n"
+""
+                        "    background-color: #009f77;\n"
 "    color: #ffffff;\n"
-"\n"
-"    bo"
-                        "rder: 1px solid #00c896;\n"
+"    border: 1px solid #00c896;\n"
 "}\n"
 "\n"
 "QPushButton:disabled {\n"
 "    background-color: #111816;\n"
-"\n"
 "    color: #5d746d;\n"
-"\n"
 "    border: 1px solid #23312d;\n"
 "}"));
         centralwidget = new QWidget(MainWindow);
@@ -646,12 +745,112 @@ public:
         stackedWidget_2->setGeometry(QRect(249, -1, 1051, 691));
         page = new QWidget();
         page->setObjectName("page");
-        pushButton_6 = new QPushButton(page);
-        pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setGeometry(QRect(200, 140, 94, 71));
-        label_4 = new QLabel(page);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(30, 40, 121, 41));
+        label_NameApplication = new QLabel(page);
+        label_NameApplication->setObjectName("label_NameApplication");
+        label_NameApplication->setGeometry(QRect(10, 10, 251, 61));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Segoe UI")});
+        font.setBold(true);
+        label_NameApplication->setFont(font);
+        horizontalLayoutWidget = new QWidget(page);
+        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
+        horizontalLayoutWidget->setGeometry(QRect(30, 90, 971, 81));
+        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        groupBox_Arrived = new QGroupBox(horizontalLayoutWidget);
+        groupBox_Arrived->setObjectName("groupBox_Arrived");
+        groupBox_Arrived->setMinimumSize(QSize(300, 0));
+        groupBox_Arrived->setStyleSheet(QString::fromUtf8(""));
+        label_TitleArrived = new QLabel(groupBox_Arrived);
+        label_TitleArrived->setObjectName("label_TitleArrived");
+        label_TitleArrived->setGeometry(QRect(0, 0, 151, 41));
+        label_TitleArrived->setStyleSheet(QString::fromUtf8("QLebel#label_TitleArrived{\n"
+"	font-size: 40;\n"
+"	font-weight: 500;\n"
+"}"));
+        label_NumberArrived = new QLabel(groupBox_Arrived);
+        label_NumberArrived->setObjectName("label_NumberArrived");
+        label_NumberArrived->setGeometry(QRect(160, 0, 141, 71));
+
+        horizontalLayout_3->addWidget(groupBox_Arrived);
+
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_5);
+
+        groupBox_Late = new QGroupBox(horizontalLayoutWidget);
+        groupBox_Late->setObjectName("groupBox_Late");
+        groupBox_Late->setMinimumSize(QSize(300, 0));
+        groupBox_Late->setStyleSheet(QString::fromUtf8("QGroupBox#groupBoxOrange {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #8b6a3d, stop:1 #5a4a2d);\n"
+"    border: 2px solid #a67c4a;\n"
+"    border-radius: 12px;\n"
+"    padding: 15px 20px;\n"
+"    font-size: 16px;\n"
+"    font-weight: 600;\n"
+"    color: #fff8ec;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBoxOrange:hover {\n"
+"    border: 2px solid #c69c5a;\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #9b7a4d, stop:1 #6a5a3d);\n"
+"}\n"
+"\n"
+"QGroupBox#groupBoxOrange QLabel {\n"
+"    color: #ffffff;\n"
+"    font-size: 18px;\n"
+"    font-weight: 700;\n"
+"}"));
+        label_TitleLate = new QLabel(groupBox_Late);
+        label_TitleLate->setObjectName("label_TitleLate");
+        label_TitleLate->setGeometry(QRect(0, 0, 181, 41));
+        label_NumberLate = new QLabel(groupBox_Late);
+        label_NumberLate->setObjectName("label_NumberLate");
+        label_NumberLate->setGeometry(QRect(160, 0, 141, 71));
+
+        horizontalLayout_3->addWidget(groupBox_Late);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_6);
+
+        groupBox_Missing = new QGroupBox(horizontalLayoutWidget);
+        groupBox_Missing->setObjectName("groupBox_Missing");
+        groupBox_Missing->setMinimumSize(QSize(300, 0));
+        groupBox_Missing->setStyleSheet(QString::fromUtf8("QGroupBox#groupBoxRed {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #6a3d3d, stop:1 #4a2d2d);\n"
+"    border: 2px solid #7c4a4a;\n"
+"    border-radius: 12px;\n"
+"    padding: 15px 20px;\n"
+"    font-size: 16px;\n"
+"    font-weight: 600;\n"
+"    color: #ffecec;\n"
+"}\n"
+"\n"
+"QGroupBox#groupBoxRed:hover {\n"
+"    border: 2px solid #9c5a5a;\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, \n"
+"        stop:0 #7a4d4d, stop:1 #5a3d3d);\n"
+"}\n"
+"\n"
+"QGroupBox#groupBoxRed QLabel {\n"
+"    color: #ffffff;\n"
+"    font-size: 18px;\n"
+"    font-weight: 700;\n"
+"}"));
+        label_TitleMissing = new QLabel(groupBox_Missing);
+        label_TitleMissing->setObjectName("label_TitleMissing");
+        label_TitleMissing->setGeometry(QRect(0, 0, 191, 41));
+        label_NumberMissing = new QLabel(groupBox_Missing);
+        label_NumberMissing->setObjectName("label_NumberMissing");
+        label_NumberMissing->setGeometry(QRect(160, 0, 141, 71));
+
+        horizontalLayout_3->addWidget(groupBox_Missing);
+
         stackedWidget_2->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
@@ -701,8 +900,16 @@ public:
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\320\270", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "\320\223\320\273\320\260\320\262\320\275\320\260\321\217", nullptr));
+        label_NameApplication->setText(QCoreApplication::translate("MainWindow", "FaceAccess AI", nullptr));
+        groupBox_Arrived->setTitle(QString());
+        label_TitleArrived->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\270\321\210\320\273\320\276", nullptr));
+        label_NumberArrived->setText(QCoreApplication::translate("MainWindow", "1000", nullptr));
+        groupBox_Late->setTitle(QString());
+        label_TitleLate->setText(QCoreApplication::translate("MainWindow", "\320\236\320\277\320\276\320\267\320\264\320\260\320\273\320\276", nullptr));
+        label_NumberLate->setText(QCoreApplication::translate("MainWindow", "1000", nullptr));
+        groupBox_Missing->setTitle(QString());
+        label_TitleMissing->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\321\201\321\203\321\202\321\201\321\202\320\262\321\203\320\265\321\202", nullptr));
+        label_NumberMissing->setText(QCoreApplication::translate("MainWindow", "1000", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "\320\221\320\270\320\276\320\274\320\265\321\202\321\200\320\270\321\217", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\320\270", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", nullptr));
