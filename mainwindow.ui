@@ -42,6 +42,13 @@ QFrame#indicator {
     border-radius: 2px;
 }
 
+QFrame#frame_BackgroundStatusSystems {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #2d5a4a, stop:1 #1a3d32);
+    border-radius: 6px;
+    border: none;
+}
+
 QWidget#centralwidget,
 QWidget#centralWidget {
     background-color: #07110f;
@@ -72,6 +79,11 @@ QLabel {
     font-weight: 500;
 }
 
+QLabel#label_StatusSystems {
+    font-size: 25px;
+    font-weight: 700;
+}
+
 QLabel#labelTitle {
     color: #ffffff;
     font-size: 34px;
@@ -82,6 +94,11 @@ QLabel#labelTitle {
 
 QLabel#label_NameApplication {
     font-size: 35px;
+    font-weight: 700;
+}
+
+QLabel#label_RegistrationGuest {
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -113,6 +130,22 @@ QGroupBox#groupBox_Missing QLabel#label_TitleMissing {
 QGroupBox#groupBox_Missing QLabel#label_NumberMissing {
 	font: 600 35pt &quot;Ubuntu Sans&quot;;
 	font-weight: 650;
+}
+
+QGroupBox#groupBox_RegistrationGuest {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #153028, stop:1 #0a1d18);
+    border: 2px solid #4a7c6a;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+
+QGroupBox#groupBox_StatusCamera {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #153028, stop:1 #0a1d18);
+    border: 2px solid #4a7c6a;
+    border-radius: 4px;
+    padding: 15px 20px;
 }
 
 /* === СТАТИСТИКА: groupBox_Arrived (зелёный) === */
@@ -207,6 +240,19 @@ QLineEdit::placeholder {
     color: #6e8f84;
 }
 
+QLineEdit#lineEdit_FullName,
+QLineEdit#lineEdit_PhoneNumber,
+QLineEdit#lineEdit_Organization,
+QLineEdit#lineEdit_TargetVisit,
+QLineEdit#lineEdit_Recipient{
+    background-color: #1a3d32;
+    border: 2px solid #00c896;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
 QPushButton {
     background-color: #10201b;
     color: #ecfff8;
@@ -233,6 +279,43 @@ QPushButton:disabled {
     background-color: #111816;
     color: #5d746d;
     border: 1px solid #23312d;
+}
+
+QPushButton#pushButton_RegistrationGuest {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #00e0a8, stop:1 #00b98b);
+    border: 2px solid #00c896;
+    border-radius: 10px;
+    padding: 12px 30px;
+    color: #04110d;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+QPushButton#pushButton_RegistrationGuest:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #00f0b8, stop:1 #00c99b);
+    border: 2px solid #00e0a8;
+}
+
+QPushButton#pushButton_RegistrationGuest:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+        stop:0 #00b98b, stop:1 #009f77);
+    border: 2px solid #00a87a;
+}
+
+QTimeEdit#timeEdit_TimeComing {
+    background-color: #1a3d32;
+    border: 2px solid #00c896;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+QTimeEdit#timeEdit_TimeComing focus,{
+    border: 2px solid #00e0a8;
+    background-color: #1f4a3d;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -1065,6 +1148,270 @@ QGroupBox#groupBoxRed QLabel {
           </widget>
          </item>
         </layout>
+       </widget>
+       <widget class="QFrame" name="frame_BackgroundStatusSystems">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>20</y>
+          <width>271</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_StatusSystems">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>261</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>СИСТЕМА АКТИВНА</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>19</x>
+          <y>199</y>
+          <width>1006</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QGroupBox" name="groupBox_RegistrationGuest">
+           <property name="minimumSize">
+            <size>
+             <width>671</width>
+             <height>401</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>671</width>
+             <height>401</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QLabel" name="label_RegistrationGuest">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>401</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Регистрация гостя</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="verticalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>653</width>
+              <height>331</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_FullName">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>ФИО</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_PhoneNumber">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>Телефон</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_Organization">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>Организация</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_TargetVisit">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>Цель визита</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_Recipient">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>К кому</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTimeEdit" name="timeEdit_TimeComing">
+               <property name="minimumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>651</width>
+                 <height>41</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_StatusCamera">
+           <property name="minimumSize">
+            <size>
+             <width>321</width>
+             <height>401</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>321</width>
+             <height>401</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>19</x>
+              <y>20</y>
+              <width>111</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Статус камеры</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>70</y>
+              <width>251</width>
+              <height>231</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="icons.qrc">:/icon/icon_source_file/iconsCamera(1).png</pixmap>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_RegistrationGuest">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>620</y>
+          <width>561</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Зарегистрировть гостя</string>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="page_2">
