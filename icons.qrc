@@ -6,5 +6,8 @@
         <file>icon_source_file/settingsPage.png</file>
         <file>icon_source_file/homePage.png</file>
         <file>icon_source_file/iconsCamera(1).png</file>
+        <file>icon_source_file/iconsGreanKrug.png</file>
+        <file>icon_source_file/iconsRedKrug.png</file>
+        <file>icon_source_file/icons8.png</file>
     </qresource>
 </RCC>

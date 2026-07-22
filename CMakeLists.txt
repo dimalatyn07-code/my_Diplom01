@@ -34,6 +34,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         sidebar.cpp
         login.h
         login.cpp
+        form.ui
+
+
     )
 else()
     if(ANDROID)
