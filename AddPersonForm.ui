@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1031</width>
+    <height>621</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1031</width>
+    <height>621</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* === ФОРМА ДОБАВЛЕНИЯ ОПЕРАТОРА === */
+
+/* Основной контейнер формы - тёмный фон */
+QWidget#AddPersonForm,
+QWidget#Form {
+    background-color: #07110f;
+}
+
+/* Заголовок формы */
+QLabel#label_headline {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+/* Подпись под фото */
+QLabel#label_photo {
+    font-size: 13px;
+    color: #6e8f84;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+/* Лейблы полей ввода - БЕЛЫЙ ТЕКСТ */
+QLabel#label_Name,
+QLabel#label_Login,
+QLabel#label_Password {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    padding-bottom: 5px;
+}
+/* Кнопка загрузки фото - КОМПАКТНАЯ */
+QPushButton#pushButton_loading {
+    background-color: #101d1a;
+    border: 1px dashed #00c896;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #ecfff8;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+QPushButton#pushButton_loading:hover {
+    background-color: #132420;
+    border: 1px dashed #00e0a8;
+    color: #ffffff;
+}
+
+QPushButton#pushButton_loading:pressed {
+    background-color: #0d1f1a;
+    border: 1px dashed #009f77;
+}
+
+/* Кнопка Сохранить - КОМПАКТНАЯ */
+QPushButton#pushButton_Save {
+    background-color: #00c896;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: #04110d;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 100px;
+}
+
+QPushButton#pushButton_Save:hover {
+    background-color: #00d39f;
+}
+
+QPushButton#pushButton_Save:pressed {
+    background-color: #00b98b;
+}
+
+/* Кнопка Отмена - КОМПАКТНАЯ */
+QPushButton#pushButton_Cancel {
+    background-color: #10201b;
+    color: #ecfff8;
+    border: 1px solid #4a7c6a;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+QPushButton#pushButton_Cancel:hover {
+    background-color: #1a3d32;
+    border: 1px solid #5a9c8a;
+    color: #ffffff;
+}
+
+QPushButton#pushButton_Cancel:pressed {
+    background-color: #0d1f1a;
+}
+
+/* Выпадающий список ролей - КОМПАКТНЫЙ */
+QComboBox#comboBox_Role {
+    background-color: #101d1a;
+    border: 1px solid #21453b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #f2fffb;
+    font-size: 14px;
+    min-height: 15px;
+    max-height: 35px;
+}
+
+QComboBox#comboBox_Role:hover {
+    border: 1px solid #00b98b;
+}
+
+QComboBox#comboBox_Role:focus {
+    border: 1px solid #00d39f;
+}
+
+QComboBox#comboBox_Role::drop-down {
+    border: none;
+    width: 25px;
+}
+
+QComboBox#comboBox_Role::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #00c896;
+    margin-right: 8px;
+}
+
+/* Выпадающее меню */
+QComboBox#comboBox_Role QAbstractItemView {
+    background-color: #0d1815;
+    border: 1px solid #00c896;
+    border-radius: 6px;
+    selection-background-color: #00c896;
+    selection-color: #04110d;
+    outline: none;
+    padding: 3px;
+    min-height: 30px;
+}
+
+QComboBox#comboBox_Role QAbstractItemView::item {
+    padding: 6px 10px;
+    border-radius: 4px;
+    min-height: 25px;
+}
+
+/* Поля ввода - КОМПАКТНЫЕ */
+QLineEdit#lineEdit_Name,
+QLineEdit#lineEdit_Login,
+QLineEdit#lineEdit_Password {
+    background-color: #101d1a;
+    border: 1px solid #21453b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    min-height: 15px;
+    max-height: 35px;
+}
+
+QLineEdit#lineEdit_Name:hover,
+QLineEdit#lineEdit_Login:hover,
+QLineEdit#lineEdit_Password:hover {
+    border: 1px solid #00b98b;
+}
+
+QLineEdit#lineEdit_Name:focus,
+QLineEdit#lineEdit_Login:focus,
+QLineEdit#lineEdit_Password:focus {
+    border: 1px solid #00d39f;
+    background-color: #132420;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_headline">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>511</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Добавление операторов системы</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>521</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_Name">
+        <property name="text">
+         <string>ФИО</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Name">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_Login">
+        <property name="text">
+         <string>Логин</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Login">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_Password">
+        <property name="text">
+         <string>Пароль</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Password">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QComboBox" name="comboBox_Role">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>560</y>
+     <width>297</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_Save">
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Cancel">
+      <property name="text">
+       <string>Отмена</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_loading">
+   <property name="geometry">
+    <rect>
+     <x>713</x>
+     <y>460</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Загрузить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_photo">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>130</y>
+     <width>311</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/icon/icon_source_file/iconsAvatar300x300.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

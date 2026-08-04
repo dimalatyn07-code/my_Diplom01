@@ -9,5 +9,6 @@
         <file>icon_source_file/iconsGreanKrug.png</file>
         <file>icon_source_file/iconsRedKrug.png</file>
         <file>icon_source_file/icons8.png</file>
+        <file>icon_source_file/iconsAvatar300x300.png</file>
     </qresource>
 </RCC>
