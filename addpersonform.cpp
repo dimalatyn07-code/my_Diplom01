@@ -45,12 +45,19 @@ void AddPersonForm::onSaveClicked()
 
 void AddPersonForm::onCancelClicked()
 {
-    // Возврат на предыдущую страницу
+    // Возврат на страницу пользователей (page_3)
     QWidget *parentWidget = this->parentWidget();
     if (parentWidget) {
         QStackedWidget *stackedWidget = qobject_cast<QStackedWidget*>(parentWidget);
         if (stackedWidget) {
-            stackedWidget->setCurrentIndex(0); // Индекс главной страницы
+            // Находим страницу page_3 и переключаемся на неё
+            for (int i = 0; i < stackedWidget->count(); ++i) {
+                QWidget *page = stackedWidget->widget(i);
+                if (page && page->objectName() == "page_3") {
+                    stackedWidget->setCurrentWidget(page);
+                    return;
+                }
+            }
         }
     }
 }
