@@ -6,6 +6,7 @@
 #include <QGuiApplication>
 #include "login.h"
 #include "sidebar.h"
+#include "addpersonform.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -31,6 +32,9 @@ private slots:
     void on_pushButton_3_clicked();
     void on_pushButton_4_clicked();
     void on_pushButton_5_clicked();
+    
+    // Обработка кнопки добавления пользователя
+    void on_pushButton_NewPerson_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -38,6 +42,7 @@ private:
     // Модули
     LoginHandler *loginHandler;
     Sidebar *sidebar;
+    AddPersonForm *addPersonForm;
 
     // Анимация страниц
     void animatePage(QWidget *page);

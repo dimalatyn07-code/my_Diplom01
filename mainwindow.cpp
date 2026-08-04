@@ -28,6 +28,17 @@ MainWindow::MainWindow(QWidget *parent)
         this
         );
 
+    // Инициализация AddPersonForm
+    addPersonForm = new AddPersonForm(ui->stackedWidget_2);
+    
+    // Добавляем форму в stackedWidget_2
+    ui->stackedWidget_2->addWidget(addPersonForm);
+    
+    // Подключаем сигнал personAdded к слоту возврата на страницу пользователей
+    connect(addPersonForm, &AddPersonForm::personAdded, this, [this]() {
+        ui->stackedWidget_2->setCurrentWidget(ui->page_3);
+    });
+
     // Устанавливаем первую кнопку активной
     sidebar->setActiveButton(ui->pushButton);
 
@@ -87,6 +98,13 @@ void MainWindow::on_pushButton_5_clicked()
     animatePage(ui->page_5);
     sidebar->moveIndicator(ui->pushButton_5);
     sidebar->setActiveButton(ui->pushButton_5);
+}
+
+// Обработка кнопки "Добавить" на странице пользователей
+void MainWindow::on_pushButton_NewPerson_clicked()
+{
+    ui->stackedWidget_2->setCurrentWidget(addPersonForm);
+    animatePage(addPersonForm);
 }
 
 // АНИМАЦИЯ СТРАНИЦ
